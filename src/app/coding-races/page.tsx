@@ -3,13 +3,18 @@ export default function CodingRacesPage() {
     <article className="card">
       <h1 className="page-heading">Coding Races Ideas</h1>
       <p>
-        Draft collaborative programming challenges where teams compete to solve timed
-        prompts. Upcoming iterations will introduce timers, scoreboards, and reusable
-        challenge templates.
+        Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <p>
-        Use the tab generator to outline race rules, starter code, and post-race
-        reflections while the dedicated tooling is under construction.
+        Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </article>
   );

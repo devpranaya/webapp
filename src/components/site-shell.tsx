@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
-import { COPYRIGHT_OWNER, PERSONAL_INFO } from "@/lib/personal-info";
+import {PERSONAL_INFO } from "@/lib/personal-info";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
@@ -195,10 +195,6 @@ export default function SiteShell({ children }: { children: ReactNode }) {
         {children}
       </main>
       <footer className="site-footer">
-        <p>
-          <span>&copy; {new Date().getFullYear()} {COPYRIGHT_OWNER}.</span>
-          <span> Designed for the LTU HTML export workflow.</span>
-        </p>
         <p>
           <strong>{PERSONAL_INFO.name}</strong> · {PERSONAL_INFO.studentNumber} · {formattedDate}
         </p>

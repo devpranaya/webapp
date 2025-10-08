@@ -219,8 +219,7 @@ export default function HomePage() {
     <div className="card">
       <h1 className="page-heading">LMS Tab</h1>
       <p>
-        Configure the tabs below and
-        copy the HTML code to paste into your course.
+        Configure the tabs below.
       </p>
 
       <section aria-labelledby="tab-configurator" className="form-grid">
@@ -301,8 +300,8 @@ export default function HomePage() {
           Generated HTML code
         </h2>
         <p>
-          The export is self-contained, with inline styles and JavaScript that preserve
-          keyboard navigation and can be pasted directly..
+          The export is self-contained, with inline styles and JavaScript that preserves
+          keyboard navigation.
         </p>
         <textarea readOnly value={generatedHtml} aria-label="HTML output" />
         <div className="button-row" style={{ marginTop: "0.75rem" }}>

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Interactive Activity Builder",
   description:
-    "Configure activity tabs and export inline HTML + JavaScript for LTU's LMS.",
+    "Configure activity tabs and export inline HTML + JavaScript for the LMS.",
   authors: [{ name: PERSONAL_INFO.name }],
 };
 

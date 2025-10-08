@@ -1,6 +1,4 @@
 export const PERSONAL_INFO = {
-  name: "Student Name",
-  studentNumber: "S12345678",
+  name: "Devandro Pranaya Adenan",
+  studentNumber: "22586704",
 };
-
-export const COPYRIGHT_OWNER = "Student Name";
