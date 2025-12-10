@@ -4,11 +4,12 @@ import { prisma } from '@/lib/prisma';
 // GET /api/feedback/:id - Get specific feedback
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const feedback = await prisma.feedback.findUnique({
-      where: { id: params.id },
+      where: { id },
     });
 
     if (!feedback) {
@@ -31,11 +32,12 @@ export async function GET(
 // DELETE /api/feedback/:id - Delete feedback
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     await prisma.feedback.delete({
-      where: { id: params.id },
+      where: { id },
     });
 
     return NextResponse.json({ message: 'Feedback deleted successfully' });

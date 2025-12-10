@@ -4,11 +4,12 @@ import { prisma } from '@/lib/prisma';
 // GET /api/games/:id - Get specific game session
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const session = await prisma.gameSession.findUnique({
-      where: { id: params.id },
+      where: { id },
     });
 
     if (!session) {
@@ -35,9 +36,10 @@ export async function GET(
 // PUT /api/games/:id - Update game session
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const body = await request.json();
     const { status, timeElapsed, fixesCompleted, violations } = body;
 
@@ -55,7 +57,7 @@ export async function PUT(
     if (violations) updateData.violations = JSON.stringify(violations);
 
     const session = await prisma.gameSession.update({
-      where: { id: params.id },
+      where: { id },
       data: updateData,
     });
 
@@ -76,11 +78,12 @@ export async function PUT(
 // DELETE /api/games/:id - Delete game session
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     await prisma.gameSession.delete({
-      where: { id: params.id },
+      where: { id },
     });
 
     return NextResponse.json({ message: 'Game session deleted successfully' });

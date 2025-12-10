@@ -65,6 +65,8 @@ function CourtRoomPage() {
     const [violations, setViolations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [currentScene, setCurrentScene] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("desk");
     const [visibleMessageId, setVisibleMessageId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [sessionId, setSessionId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [playerName, setPlayerName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const messageIntervalRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const timerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const startTimeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(0);
@@ -376,7 +378,7 @@ function CourtRoomPage() {
                     children: "⚖️ Court Room Debugging Challenge"
                 }, void 0, false, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 776,
+                    lineNumber: 778,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -387,7 +389,7 @@ function CourtRoomPage() {
                     children: "You're a developer under pressure. Fix critical bugs while managing interruptions from your boss, family, and team. Ignore accessibility or security issues too long, and you'll face legal consequences!"
                 }, void 0, false, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 778,
+                    lineNumber: 780,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -406,7 +408,7 @@ function CourtRoomPage() {
                             children: "⏱️ Timer Control"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 793,
+                            lineNumber: 795,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -423,7 +425,7 @@ function CourtRoomPage() {
                                     children: formatTime(timeRemaining)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 806,
+                                    lineNumber: 808,
                                     columnNumber: 13
                                 }, this),
                                 gameStatus === "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -444,14 +446,14 @@ function CourtRoomPage() {
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 818,
+                                            lineNumber: 820,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "minutes"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 828,
+                                            lineNumber: 830,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -460,19 +462,19 @@ function CourtRoomPage() {
                                             children: "Set Time"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 829,
+                                            lineNumber: 831,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 815,
+                                    lineNumber: 817,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 797,
+                            lineNumber: 799,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -484,7 +486,7 @@ function CourtRoomPage() {
                                     children: "▶ Start Game"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 838,
+                                    lineNumber: 840,
                                     columnNumber: 15
                                 }, this),
                                 gameStatus === "playing" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -493,7 +495,7 @@ function CourtRoomPage() {
                                     children: "⏸ Pause"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 843,
+                                    lineNumber: 845,
                                     columnNumber: 15
                                 }, this),
                                 gameStatus === "paused" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -504,7 +506,7 @@ function CourtRoomPage() {
                                             children: "▶ Resume"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 849,
+                                            lineNumber: 851,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -513,7 +515,7 @@ function CourtRoomPage() {
                                             children: "🔄 Reset"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 852,
+                                            lineNumber: 854,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -524,19 +526,19 @@ function CourtRoomPage() {
                                     children: "🔄 Play Again"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 858,
+                                    lineNumber: 860,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 836,
+                            lineNumber: 838,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 785,
+                    lineNumber: 787,
                     columnNumber: 9
                 }, this),
                 gameStatus !== "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -549,7 +551,7 @@ function CourtRoomPage() {
                             children: "✅ Fix Progress"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 868,
+                            lineNumber: 870,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -571,18 +573,18 @@ function CourtRoomPage() {
                                     ]
                                 }, fix, true, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 884,
+                                    lineNumber: 886,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 869,
+                            lineNumber: 871,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 867,
+                    lineNumber: 869,
                     columnNumber: 11
                 }, this),
                 gameStatus !== "idle" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -595,7 +597,7 @@ function CourtRoomPage() {
                             children: "💻 Code Editor"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 912,
+                            lineNumber: 914,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -607,7 +609,7 @@ function CourtRoomPage() {
                             children: "Fix the issues in the code below. Hints appear in the messages!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 913,
+                            lineNumber: 915,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -627,13 +629,13 @@ function CourtRoomPage() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 922,
+                            lineNumber: 924,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 911,
+                    lineNumber: 913,
                     columnNumber: 11
                 }, this),
                 gameStatus === "won" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -647,7 +649,7 @@ function CourtRoomPage() {
                             children: "🎉 Victory!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 944,
+                            lineNumber: 946,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -658,13 +660,13 @@ function CourtRoomPage() {
                             children: "You completed all critical fixes without violations. Well done!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 947,
+                            lineNumber: 949,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 943,
+                    lineNumber: 945,
                     columnNumber: 11
                 }, this),
                 gameStatus === "lost" && violations.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -679,7 +681,7 @@ function CourtRoomPage() {
                             children: "⚖️ Court Room"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 955,
+                            lineNumber: 957,
                             columnNumber: 13
                         }, this),
                         violations.map((v, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -693,7 +695,7 @@ function CourtRoomPage() {
                                         children: v.type === "disability-act" ? "⚠️ Disability Act Violation" : v.type === "bankruptcy" ? "💸 Bankruptcy" : "⚡ Laws of Tort Violation"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/court-room/page.tsx",
-                                        lineNumber: 966,
+                                        lineNumber: 968,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -703,19 +705,19 @@ function CourtRoomPage() {
                                         children: v.message
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/court-room/page.tsx",
-                                        lineNumber: 973,
+                                        lineNumber: 975,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, i, true, {
                                 fileName: "[project]/src/app/court-room/page.tsx",
-                                lineNumber: 965,
+                                lineNumber: 967,
                                 columnNumber: 15
                             }, this))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 954,
+                    lineNumber: 956,
                     columnNumber: 11
                 }, this),
                 messages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -725,7 +727,7 @@ function CourtRoomPage() {
                             children: "📨 Message Log"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 982,
+                            lineNumber: 984,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -754,14 +756,14 @@ function CourtRoomPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1011,
+                                            lineNumber: 1013,
                                             columnNumber: 23
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: msg.content
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1020,
+                                            lineNumber: 1022,
                                             columnNumber: 23
                                         }, this),
                                         msg.fixType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -777,25 +779,25 @@ function CourtRoomPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1022,
+                                            lineNumber: 1024,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, msg.id, true, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 1000,
+                                    lineNumber: 1002,
                                     columnNumber: 21
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 983,
+                            lineNumber: 985,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 981,
+                    lineNumber: 983,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -808,7 +810,7 @@ function CourtRoomPage() {
                             children: "📦 Export Standalone Game"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1042,
+                            lineNumber: 1044,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -820,7 +822,7 @@ function CourtRoomPage() {
                             children: "Download this game as a standalone HTML file that can be deployed to any LMS or website. No external dependencies required!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1043,
+                            lineNumber: 1045,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -831,18 +833,18 @@ function CourtRoomPage() {
                                 children: "📥 Download HTML Game"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/court-room/page.tsx",
-                                lineNumber: 1054,
+                                lineNumber: 1056,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1053,
+                            lineNumber: 1055,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 1041,
+                    lineNumber: 1043,
                     columnNumber: 9
                 }, this),
                 messages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -852,7 +854,7 @@ function CourtRoomPage() {
                             children: "📨 Message Log"
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1063,
+                            lineNumber: 1065,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -881,14 +883,14 @@ function CourtRoomPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1092,
+                                            lineNumber: 1094,
                                             columnNumber: 23
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: msg.content
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1101,
+                                            lineNumber: 1103,
                                             columnNumber: 23
                                         }, this),
                                         msg.fixType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,25 +906,25 @@ function CourtRoomPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/court-room/page.tsx",
-                                            lineNumber: 1103,
+                                            lineNumber: 1105,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, msg.id, true, {
                                     fileName: "[project]/src/app/court-room/page.tsx",
-                                    lineNumber: 1081,
+                                    lineNumber: 1083,
                                     columnNumber: 21
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1064,
+                            lineNumber: 1066,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 1062,
+                    lineNumber: 1064,
                     columnNumber: 11
                 }, this),
                 visibleMessage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -941,7 +943,7 @@ function CourtRoomPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1128,
+                            lineNumber: 1130,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -951,28 +953,28 @@ function CourtRoomPage() {
                             children: visibleMessage.content
                         }, void 0, false, {
                             fileName: "[project]/src/app/court-room/page.tsx",
-                            lineNumber: 1139,
+                            lineNumber: 1141,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/court-room/page.tsx",
-                    lineNumber: 1123,
+                    lineNumber: 1125,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/court-room/page.tsx",
-            lineNumber: 775,
+            lineNumber: 777,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/court-room/page.tsx",
-        lineNumber: 770,
+        lineNumber: 772,
         columnNumber: 5
     }, this);
 }
-_s(CourtRoomPage, "0Y8F1nTl2mIu9WHZhu6qLyjV48E=");
+_s(CourtRoomPage, "souzetRHZZD03GBNWw2Ua0R3MKA=");
 _c = CourtRoomPage;
 var _c;
 __turbopack_context__.k.register(_c, "CourtRoomPage");
