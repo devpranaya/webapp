@@ -1,0 +1,35 @@
+// This is your Prisma schema file
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model GameSession {
+  id              String    @id @default(cuid())
+  createdAt       DateTime  @default(now())
+  completedAt     DateTime?
+  status          String    // "won", "lost", "abandoned", "in_progress"
+  timeElapsed     Int?      // seconds
+  fixesCompleted  String    @default("") // JSON array as string
+  violations      String    @default("") // JSON array as string
+  playerName      String?
+
+  @@index([createdAt])
+}
+
+model Feedback {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  sessionId   String?
+  source      String   // "family", "friends", "industry"
+  rating      Int      // 1-5
+  comments    String?
+  suggestions String?
+
+  @@index([createdAt, source])
+}

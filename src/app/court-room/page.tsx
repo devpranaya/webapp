@@ -87,6 +87,8 @@ export default function CourtRoomPage() {
   const [violations, setViolations] = useState<Violation[]>([]);
   const [currentScene, setCurrentScene] = useState<"desk" | "court">("desk");
   const [visibleMessageId, setVisibleMessageId] = useState<string | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [playerName, setPlayerName] = useState("");
 
   const messageIntervalRef = useRef<NodeJS.Timeout | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
