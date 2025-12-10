@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///D:/Not%20Program%20Files/Projects/devan/webapp/src/app/escape-room/page.tsx"],"sourcesContent":["export default function EscapeRoomPage() {\r\n  return (\r\n    <article className=\"card\">\r\n      <h1 className=\"page-heading\">Escape Room Activity</h1>\r\n      <p>\r\n        Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\r\n      </p>\r\n      <p>\r\n        Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\r\n      </p>\r\n    </article>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;;0BACjB,8OAAC;gBAAG,WAAU;0BAAe;;;;;;0BAC7B,8OAAC;0BAAE;;;;;;0BAGH,8OAAC;0BAAE;;;;;;;;;;;;AAKT","debugId":null}}]
+}

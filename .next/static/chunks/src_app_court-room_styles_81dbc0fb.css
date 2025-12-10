@@ -1,0 +1,173 @@
+/* [project]/src/app/court-room/styles.css [app-client] (css) */
+.court-room-container {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background .5s;
+}
+
+.court-room-container.desk-scene {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.court-room-container.court-scene {
+  background: linear-gradient(135deg, #8b4513 0%, #2c1810 100%);
+}
+
+.timer-display {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--color-text);
+}
+
+.timer-display.urgent {
+  color: #ef4444;
+  animation: 1s infinite pulse;
+}
+
+.fix-badge {
+  text-align: center;
+  border: 2px solid;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.fix-badge.completed {
+  color: #fff;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: #10b981;
+}
+
+.fix-badge.warning {
+  color: #fff;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-color: #ef4444;
+}
+
+.fix-badge.pending {
+  background: var(--color-surface-muted);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.victory-banner {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  animation: .5s victoryBounce;
+}
+
+.court-banner {
+  color: #fff;
+  background: rgba(139, 69, 19, .95);
+  border: 3px solid #8b4513;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  animation: .5s gavelSlam;
+}
+
+.violation-item {
+  background: rgba(0, 0, 0, .3);
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  padding: 1rem;
+}
+
+.message-item {
+  color: var(--color-text);
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  padding: .75rem;
+}
+
+.message-item.critical-urgent {
+  background: rgba(239, 68, 68, .15);
+  border: 1px solid rgba(239, 68, 68, .3);
+}
+
+.message-item.critical-normal {
+  background: rgba(245, 158, 11, .15);
+  border: 1px solid rgba(245, 158, 11, .3);
+}
+
+.message-item.non-critical {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.message-popup {
+  z-index: 1000;
+  background: #fff;
+  border-radius: .75rem;
+  max-width: 400px;
+  padding: 1rem;
+  animation: .3s slideInRight;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+}
+
+.message-popup.urgent {
+  border: 3px solid #ef4444;
+}
+
+.message-popup.normal {
+  border: 3px solid #f59e0b;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes victoryBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gavelSlam {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=src_app_court-room_styles_81dbc0fb.css.map*/

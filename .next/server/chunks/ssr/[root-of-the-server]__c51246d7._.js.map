@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///D:/Not%20Program%20Files/Projects/devan/webapp/src/app/about/page.tsx"],"sourcesContent":["import { PERSONAL_INFO } from \"@/lib/personal-info\";\r\n\r\nexport default function AboutPage() {\r\n  return (\r\n    <article className=\"card\">\r\n      <h1 className=\"page-heading\">About This Builder</h1>\r\n      <p>\r\n        The site delivers the first milestone of the Cloud WebApp project. It focuses\r\n        on portable HTML code that meets accessibility and the outlined constraints.\r\n      </p>\r\n\r\n      <section aria-labelledby=\"profile-details\">\r\n        <h2 id=\"profile-details\" className=\"section-heading\">\r\n          Student details\r\n        </h2>\r\n        <p>\r\n          <strong>Name:</strong> {PERSONAL_INFO.name}\r\n          <br />\r\n          <strong>Student number:</strong> {PERSONAL_INFO.studentNumber}\r\n        </p>\r\n      </section>\r\n    </article>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;;0BACjB,8OAAC;gBAAG,WAAU;0BAAe;;;;;;0BAC7B,8OAAC;0BAAE;;;;;;0BAKH,8OAAC;gBAAQ,mBAAgB;;kCACvB,8OAAC;wBAAG,IAAG;wBAAkB,WAAU;kCAAkB;;;;;;kCAGrD,8OAAC;;0CACC,8OAAC;0CAAO;;;;;;4BAAc;4BAAE,+IAAa,CAAC,IAAI;0CAC1C,8OAAC;;;;;0CACD,8OAAC;0CAAO;;;;;;4BAAwB;4BAAE,+IAAa,CAAC,aAAa;;;;;;;;;;;;;;;;;;;AAKvE","debugId":null}}]
+}

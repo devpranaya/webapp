@@ -1,0 +1,168 @@
+/* Court Room Game Styles */
+.court-room-container {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+.court-room-container.desk-scene {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.court-room-container.court-scene {
+  background: linear-gradient(135deg, #8b4513 0%, #2c1810 100%);
+}
+
+.timer-display {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--color-text);
+}
+
+.timer-display.urgent {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+
+.fix-badge {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.fix-badge.completed {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: #10b981;
+  color: white;
+}
+
+.fix-badge.warning {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-color: #ef4444;
+  color: white;
+}
+
+.fix-badge.pending {
+  background: var(--color-surface-muted);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.victory-banner {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: victoryBounce 0.5s ease;
+}
+
+.court-banner {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(139, 69, 19, 0.95);
+  color: white;
+  border: 3px solid #8b4513;
+  margin-bottom: 1.5rem;
+  animation: gavelSlam 0.5s ease;
+}
+
+.violation-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.message-item {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-text);
+}
+
+.message-item.critical-urgent {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.message-item.critical-normal {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.message-item.non-critical {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.message-popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideInRight 0.3s ease;
+  z-index: 1000;
+}
+
+.message-popup.urgent {
+  border: 3px solid #ef4444;
+}
+
+.message-popup.normal {
+  border: 3px solid #f59e0b;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes victoryBounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gavelSlam {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
